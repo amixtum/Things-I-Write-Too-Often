@@ -14,13 +14,7 @@
 */
 int convertXY(int x, int y, int size, bool rows)
 {
-	if (rows)
-	{
-		return (y * size) + x;
-	}
-	
-	return (x * size) + y;
-}
+	return (rows) ? (y * size) + x : (x * size) + y;
 
 bool randTrueFalse(double p)
 {
