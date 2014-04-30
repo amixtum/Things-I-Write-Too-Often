@@ -1,4 +1,3 @@
-
 /*
 	Converts a coordinate on a two-dimensional grid
 	to an equivelent one dimensional index. This is achieved
@@ -19,5 +18,18 @@ int convertXY(int x, int y, int size, bool rows)
 	{
 		return (y * size) + x;
 	}
+	
 	return (x * size) + y;
+}
+
+bool randTrueFalse(double p)
+{
+	int random = std::rand() % 1000;
+	
+	if (random < (p*1000))
+	{
+		return true;
+	}
+	
+	return false;
 }
