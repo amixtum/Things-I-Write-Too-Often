@@ -26,22 +26,11 @@ bool randTrueFalse(double p)
 {
 	int random = std::rand() % 1000;
 	
-	if (random < (p*1000))
-	{
-		return true;
-	}
-	
-	return false;
+	return (random < 1000 * p);
 }
 
 int randBinChoice(double p, int c1, int c2)
 {
 	int random = std::rand() % 1000;
 	
-	if (random < (p*1000))
-	{
-		return c1;
-	}
-	
-	return c2;
-}
+	return (random < 1000 * p) ? c1 : c2;
