@@ -33,3 +33,15 @@ bool randTrueFalse(double p)
 	
 	return false;
 }
+
+int randBinChoice(double p, int c1, int c2)
+{
+	int random = std::rand() % 1000;
+	
+	if (random < (p*1000))
+	{
+		return c1;
+	}
+	
+	return c2;
+}
