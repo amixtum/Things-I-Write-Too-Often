@@ -28,3 +28,4 @@ int randBinChoice(double p, int c1, int c2)
 	int random = std::rand() % 1000;
 	
 	return (random < 1000 * p) ? c1 : c2;
+}
