@@ -15,7 +15,7 @@
 int convertXY(int x, int y, int size, bool rows)
 {
 	return (rows) ? (y * size) + x : (x * size) + y;
-
+}
 bool randTrueFalse(double p)
 {
 	int random = std::rand() % 1000;
